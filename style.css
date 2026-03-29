@@ -1,0 +1,72 @@
+:root {
+    --bg: #fff;
+    --text: #111;
+}
+
+body.dark {
+    --bg: #111;
+    --text: #fff;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial;
+    transition: 0.3s;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px;
+}
+
+/* PRODUCTS */
+.products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+    ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

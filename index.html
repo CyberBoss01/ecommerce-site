@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopX</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1>ShopX</h1>
+
+        <div class="hamburger" id="hamburger">☰</div>
+
+        <ul id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="dashboard.html">Admin</a></li>
+        </ul>
+
+        <button id="themeToggle">🌙</button>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Welcome to ShopX</h2>
+    <p>Best products online</p>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+    <h2>Products</h2>
+    <div id="productList" class="products"></div>
+</section>
+
+<!-- LOGIN -->
+<section id="login">
+    <h2>Login</h2>
+    <input id="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</section>
+
+<!-- PAYMENT -->
+<section>
+    <h2>Checkout</h2>
+    <button onclick="pay()">Pay with Paystack</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
